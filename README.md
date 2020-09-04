@@ -13,7 +13,7 @@ con su respectiva configuracion
 ## Instalación
 > **Clonar el repositorio:** 
 ```sh
-$ https://github.com/FelipeRojas15/AREP-TallerSPARKWEB2
+$ https://github.com/FelipeRojas15/AREP-Parcial
 ```
 > **Compilar el proyecto:**
 ```sh
@@ -25,7 +25,7 @@ $ java -cp target/tallerLinkedList-1.0-SNAPSHOT.jar edu.escuelaing.arem.app.spar
 ```
 > **Abrir la aplicacion con heroku:** 
 ```sh
-$ https://guarded-dusk-94649.herokuapp.com/
+$ https://ancient-castle-65997.herokuapp.com/
 ```
 
 
