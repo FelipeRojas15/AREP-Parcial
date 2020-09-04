@@ -1,7 +1,7 @@
 # SPARK WEB 
-> En este taller se realizará los cálculos de desviación estándar y la media de una tabla con n números, por medio de una
-> aplicación web con
-> Si quiere saber mas sobre el proyecto, puede leer el [Informe](https://github.com/FelipeRojas15/AREP-TallerSPARKWEB2/blob/master/SparkWebAbstract.pdf).
+> En este Parcial se realizará los cálculos de desviación estándar, sumatoria y ordenamiento con bubblesort de una tabla con n números, por medio de una
+> aplicación web y con el framework de Spark
+
 
 ## Requerimientos 
 Se necesita que tenga instalado en su computadora:
