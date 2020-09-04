@@ -85,10 +85,11 @@ public class SparkWeb {
    private static String resultPage(Request req, Response res) throws IOException{
         String result = req.queryParams("inputData");
         DataReader data = new DataReader();
-        
+        String listas = data.ordenamiento(result);
         LinkedList<Float> lista =data.readForm(result);
         float media = (float)lista.get(1).getValue();
         float sum = (float)lista.get(0).getValue();
+        
         
         
         
@@ -103,6 +104,7 @@ public class SparkWeb {
                 + "<body>"
                 + "<h2>Media Estadística:"+ media +"</h2>"
                     + "<h2>Sumatoria:" + sum+ " </h2>"
+                 + "<h2>Lista:" + listas+ " </h2>"
                 + " <a href = \\\"/\\\" target = \\\"_self\\\">Home Page</a>\\n\""
                 + "</body>"
                 + "</html>");

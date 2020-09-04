@@ -73,6 +73,30 @@ public class DataReader {
     
     
     }
+     public static String ordenamiento(String form){
+         LinkedList lista = new LinkedList();
+        
+        String[] num = form.split(" ");
+        for(int i=0;i<form.length()-(form.length()/2);i++){
+          
+                float a = Float.parseFloat(num[i]);
+                
+                lista.add(a);
+        }
+        LinkedList<Float> result =  new LinkedList<Float>();
+        result.bubbleSort(lista);
+        String ans=new String("");
+        
+
+        int n = lista.getSize();
+        for (int i=0; i<n; ++i){
+                float c = (float)lista.get(i).getValue();
+                int c1 = (int)c;
+                ans = ans + Integer.toString(c1) +" ";
+        }
+        
+        return ans;
+    }
     
     
 }
