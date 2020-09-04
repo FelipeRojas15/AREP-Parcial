@@ -22,8 +22,8 @@ public class SparkWeb {
         
         get("/",(req, res)-> homePage(req, res));
         get("/calculator",(req, res)-> calculatorPage(req,res));
-        get("/result",(req, res)-> resultPage(req,res));
-        
+        //get("/result",(req, res)-> resultPage(req,res));
+        get("/result", (req, res) -> resultPage(req,res));
     }
     public static int getPort(){
         if (System.getenv("PORT") != null) {
@@ -105,11 +105,14 @@ public class SparkWeb {
                 + "<h2>Media Estadística:"+ media +"</h2>"
                     + "<h2>Sumatoria:" + sum+ " </h2>"
                  + "<h2>Lista:" + listas+ " </h2>"
+                + "<h2>{Lista:" + listas+ ", "+ "Media: " +media+", "+"Sumatoria: "+sum+"}"+ " </h2>"
                 + " <a href = \\\"/\\\" target = \\\"_self\\\">Home Page</a>\\n\""
                 + "</body>"
                 + "</html>");
         
-        return resultado;
+        return  resultado;
+   }
+
     
-    }
+
 }
